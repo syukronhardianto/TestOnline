@@ -30,5 +30,10 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("detail", detail)
             startActivity(intent)
         }
+
+        about_btn.setOnClickListener {
+            val intent = Intent(this, AboutActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
